@@ -30,7 +30,7 @@ public final class LifeSteal extends JavaPlugin {
         saveDefaultConfig();
         Bukkit.addRecipe(heartRecipe());
 
-        Bukkit.broadcastMessage(ChatColor.GREEN + "Life Steal Plugin has Finished Loading!");
+        Bukkit.broadcastMessage(ChatColor.GREEN + "LifeSteal Plugin has Finished Loading!");
 
     }
 
@@ -45,8 +45,7 @@ public final class LifeSteal extends JavaPlugin {
         ItemMeta meta = item.getItemMeta();
         meta.setDisplayName(ChatColor.RED + "Heart");
         List<String> lore = new ArrayList<>();
-        lore.add(ChatColor.DARK_RED + "Created Using The Riches of 1000 Men");
-        lore.add(ChatColor.DARK_RED + "Grants an Extra Heart... Use Wisely");
+        lore.add(ChatColor.DARK_RED + "An extra heart!"
         meta.setLore(lore);
         item.setItemMeta(meta);
 
